@@ -1,17 +1,19 @@
+ * {
+  box-sizing: border-box;
+}
 a {
   color: #fff; 
   text-decoration: none; 
   outline: none
 }
-
  a:hover, a:active {
    text-decoration: none;
    color:#fff; 
    background-color:#f59000;
 }
-
-* {
-  box-sizing: border-box;
+body{
+  padding: 0;
+  margin: 0;
 }
 
 /*  */
@@ -24,17 +26,73 @@ a {
  }
 
 .section-main{
-  padding: 0px 5vw;
+  padding: 100px 5vw 0px 5vw;
+  height:980px;
+  background-color: #536175;
+  text-align: center;
+
+  background-image: url("/imgs/mac-wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mac-window{
+  /* width:880px; */
+  /* min-width: 880px; */
+  text-align: left;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.terminal-topbar{
+  width: 100%;
+  height:28px;
+  background-color: rgb(51, 52, 54);
+  border-top: 1px rgb(70, 75, 80) solid;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+  padding:0px 10px;
+
+  box-sizing: border-box;
+}
+
+.terminal-topbar .btn{
+  width: 12px;
+  height: 12px;
+  margin: 8px 1px 0px 1px;
+  display: inline-block;
+
+  border-radius: 8px;
+
+  vertical-align: middle;
+}
+
+.terminal-topbar .red{
+  background-color: rgb(237, 105, 94);
+}
+.terminal-topbar .yellow{
+  background-color: rgb(254,188,46);
+}
+.terminal-topbar .green{
+  background-color: rgb(40, 198, 63);
 }
 
 #terminal{
   width: 880px;
   min-width: 880px;
-  margin: 0px auto;
+  height: 680px;
+  margin: 0px;
 
   background-color: rgb(30,35,42);
   padding:20px;
-  /* display:inline-block; */
+
+  border: 1px rgb(70, 75, 80) solid;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  box-shadow: 20px 20px 40px black;
 }
 
 .terminal-body{
@@ -51,7 +109,6 @@ a {
   padding: 3px 8px 3px 18px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-
 }
 
 .terminal-head-title{
