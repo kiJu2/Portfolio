@@ -1,13 +1,95 @@
-/* body {
-  font-family: Monaco, Consolas, "Lucida Console", monospace;
-  background-color: black;
-  color: #1EFF00;
-  }
+a {
+  color: #fff; 
+  text-decoration: none; 
+  outline: none
+}
 
-.nodisplay {
-  display: none;
-  } */
+ a:hover, a:active {
+   text-decoration: none;
+   color:#fff; 
+   background-color:#f59000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*  */
+
+@font-face{
+  font-family:'MesloLGS'; 
+  src: local('../fonts/MesloLGSRegular.otf') format('opentype');
+  font-style: normal;
+  font-weight: normal;
+ }
 
 .section-main{
-  margin: 0px 80px;
+  padding: 0px 5vw;
+}
+
+#terminal{
+  width: 880px;
+  min-width: 880px;
+  margin: 0px auto;
+
+  background-color: rgb(30,35,42);
+  padding:20px;
+  /* display:inline-block; */
+}
+
+.terminal-body{
+  color: rgb(255,233,194)
+}
+
+.terminal-head{
+  font-family: MesloLGS;
+  font-size: 16px;
+}
+
+.terminal-head-bg{
+  background-color: rgb(48,48,48);
+  padding: 3px 8px 3px 18px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+}
+
+.terminal-head-title{
+  color: rgb(238, 238, 238);
+}
+
+.terminal-head-triangle-right{
+  width: 17px;
+  height: 17px;
+  top: 4;
+  right: 8px;
+
+  background-color: rgb(48,48,48);
+  transform: rotate(45deg);
+
+  position: relative;
+  display: inline-block;
+}
+
+.terminal-head-arrow{
+  width: 17px;
+  height: 17px;
+  border-top: rgb(130,130,130) solid 1px;
+  border-right: rgb(130,130,130) solid 1px;
+
+  top: 4;
+  right: 8px;
+
+  transform: rotate(45deg);
+  position: relative;
+  display: inline-block;
+}
+
+.terminal-head-path{
+  color:rgb(0, 175, 255);
+  font-family: 'MesloLGS';
+}
+
+.terminal-alink{
+  /* font- */
 }
