@@ -10,6 +10,7 @@ a {
    text-decoration: none;
    color:#fff; 
    background-color:#f59000;
+   cursor: pointer;
 }
 body{
   padding: 0;
@@ -209,6 +210,7 @@ nav .nav-link{
 
 .header{
   text-align: center;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.8em;
   margin:0px;
   margin-bottom: 8px;
@@ -314,7 +316,7 @@ nav .nav-link{
 
 .portfolio-container{
   max-width: 1200px;
-  /* padding: 20px 0; */
+  padding: 0 40px;
 }
 .portfolio-container > .portfolio-header{
   font-size: 102px;
@@ -330,15 +332,18 @@ nav .nav-link{
   justify-content: center;
   column-gap: 10%;
   row-gap: 80px;
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 .portfolio-img-container{
-
+  display: grid;
+  place-items: center;
 }
 .portfolio-img-container > img{
-  width: 600px;
-  background-color: red;
+  width: 100%;
+  /* background-color: red; */
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px #93A6C2;
 }
 
 .portfolio-info-container{
@@ -349,29 +354,62 @@ nav .nav-link{
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 300;
 
+  color: rgb(30,35,42);
+}
+.portfolio-subtitle{
   margin-bottom: 22px;
+  
+  color: rgba(30,35,42,0.5) !important;
 }
 .portfolio-info-container > .portfolio-contents{
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 100;
 }
 
-.btn{
-  /* background-color: red; */
-  /* background-color: rgb(86,72,206); */
-  padding: 8px 20px;
-  font-size: 18px;
-  /* color:white; */
-  border-radius: 25px;
-  border: 1px solid rgb(31,35,41);
+.portfolio-btns-container{
+  margin: 46px 0px 12px 0px;
+  /* text-align: right; */
+}
+.portfolio-info-list > li{
+  font-family: 'Noto Sans KR', sans-serif;
+  color:rgb(30,35,42);
+  font-weight: 300;
+  font-size:0.9em;
+}
+.portfolio-info-list > li:nth-last-child(1){
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  /* color:rgb(30,35,42); */
+  font-weight: 500;
+  /* font-size:0.9em; */
 }
 
-.year-border{
-  font-size: 0.6em;
-  padding: 4px 8px;
+.visit-btn{
+  padding: 6px 12px;
+  margin-right: 2px;
+  font-size: 1.2em;
+  border-radius: 6px;
+  background-color: #A69972;
+  color:white;
+  font-weight: 500;
+
+  font-family: MesloLGS;
+}
+
+.visit-btn:hover{
+  background-color: rgb(30,35,42);
+}
+
+.span-border{
+  font-size: 0.7em;
+  padding: 5px 8px;
   background-color: #8A9BB5;
   border-radius: 4px;
   color: white;
   font-weight: 700;
   vertical-align: middle;
+  font-family: MesloLGS;
+}
+
+.keywords-container{
+  
 }
