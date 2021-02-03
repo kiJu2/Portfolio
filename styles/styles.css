@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 a {
-  color: #fff; 
+  color: rgb(95, 215, 0); 
   text-decoration: none; 
   outline: none
 }
@@ -14,6 +14,15 @@ a {
 body{
   padding: 0;
   margin: 0;
+
+  height:4000px;
+}
+
+.nomargin{
+  margin: 0;
+}
+.div-center{
+  margin: 0 auto;
 }
 
 /*  */
@@ -25,9 +34,14 @@ body{
   font-weight: normal;
  }
 
+ /* Main Style */
+ /* Main Style */
+ /* Main Style */
+
 .section-main{
   padding: 100px 5vw 0px 5vw;
-  height:980px;
+  height:100vh;
+  max-height: 1200px;
   background-color: #536175;
   text-align: center;
 
@@ -42,7 +56,6 @@ body{
   /* min-width: 880px; */
   text-align: left;
   display: inline-block;
-  margin: 0 auto;
 }
 
 .terminal-topbar{
@@ -147,6 +160,124 @@ body{
   font-family: 'MesloLGS';
 }
 
-.terminal-alink{
-  /* font- */
+/* Nav Style */
+/* Nav Style */
+/* Nav Style */
+
+nav{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 58px;
+  background-color: rgb(31,35,41);
+
+  /* position: absolute; */
+}
+
+nav .nav-link-wrap{
+  width: 1200px;
+}
+
+nav .nav-link{
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  color:white;
+
+  margin:0px 20px;
+  font-size: 16px;
+}
+
+/* Header Style */
+
+.header-wrap{
+  margin: 100px 0px 60px 0px;
+}
+
+.header{
+  text-align: center;
+  font-size: 1.8em;
+  margin:0px;
+  margin-bottom: 8px;
+  color:rgb(31,35,41);
+}
+
+.header-bar{
+  width: 50px;
+  height:2px;
+
+  background-color: rgb(31,35,41);
+}
+
+/* Grid Style */
+/* Grid Style */
+/* Grid Style */
+
+.grid-values-container{
+  max-width: 1200px;
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  column-gap: 20%;
+  row-gap: 80px;
+
+  /* background-color: red; */
+}
+.grid-values-item{
+
+}
+.grid-values-item > .icon-wrap{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  background-color: #8A9BB5;
+  width:100px;
+  height:100px;
+
+  border-radius: 10px;
+}
+
+.icon-wrap{
+  box-shadow: black;
+}
+
+.values-text-wrap{
+  
+}
+
+.values-text-wrap > .values-text{
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.values-text-wrap .values-head{
+  font-weight: 500;
+  font-size: 24px;
+  margin: 15px 0px 5px 0px;
+}
+
+.values-text-wrap .values-contents{
+  font-weight: 300;
+  font-size: 16px;
+}
+
+
+/* Profile Style */
+/* Profile Style */
+/* Profile Style */
+
+.profile-container{
+
+}
+
+.profile-container > .profile-img{
+
+}
+
+.profile-text-container > .profile-header{
+  
+}
+
+.profile-text-container > .profile-contents{
+  
 }

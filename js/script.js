@@ -1,3 +1,5 @@
+// Typing script for main page
+
 const terminalUser = "2kiju@MacBook-Pro"
 const terminalIntroContent = '\
 \
@@ -48,8 +50,8 @@ const animateTyping = (num, strings) => {
     var typed = new Typed('.typed'+num, {
       // strings: ['cd prolect', 'cd project/intro'],
       strings: strings,
-      typeSpeed: 80,
-      backSpeed: 50,
+      typeSpeed: 30,
+      backSpeed: 30,
       // fadeOut: true,
       smartBackspace: true,
       cursorChar: '',
@@ -61,31 +63,36 @@ const animateTyping = (num, strings) => {
 
 
 window.onload = () =>{
-  animateTyping('1', ['cd prolect', 'cd project/intro']);
+  setTimeout(() =>{
+    animateTyping('1', ['cd project/introduc', 'cd project/intro']);
+  }, 1000)
+  //타이핑 애니메이션
 
   setTimeout(() => {
     addTerminalHTML('2', terminalUser, '~/project/intro')
-  }, 3500)
+    // 새로운 terminal 요소 추가
+  }, 3100)
   
   setTimeout(() => {
     animateTyping('2', ['cat intro_self.md'])
-  }, 3700)
+  }, 3400)
 
   setTimeout(() =>{
     addTerminalText(terminalIntroContent)
-  }, 6000)
-
+  }, 4400)
   setTimeout(() => {
     addTerminalHTML('3', terminalUser, '~/project/intro')
-  }, 6050)
+  }, 4405)
+
   setTimeout(() => {
     animateTyping('3', ['cat info.md'])
-  }, 7000)
+  }, 5200)
   
   setTimeout(() =>{
     addTerminalText(terminalInfoContent)
-  }, 8500)
+  }, 5800)
   setTimeout(() => {
     addTerminalHTML('3', terminalUser, '~/project/intro')
-  }, 8505)
+  }, 5805)
 }
+
