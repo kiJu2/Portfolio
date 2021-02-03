@@ -280,7 +280,8 @@ nav .nav-link{
 
   border-radius: 20px;
   background-position: center;
-  background-image: url("/imgs/profile-img.png");
+  /* background-image: url("/imgs/profile-img.png"); */
+  background-color: #8A9BB5;
 }
 
 .profile-text-container > .profile-header{
