@@ -24,6 +24,10 @@ body{
 .div-center{
   margin: 0 auto;
 }
+.text-center{
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+}
 
 /*  */
 
@@ -214,6 +218,7 @@ nav .nav-link{
 
 .grid-values-container{
   max-width: 1200px;
+  padding: 0px 20%;
   display:grid;
   grid-template-columns: auto auto auto auto;
   justify-content: center;
@@ -238,7 +243,7 @@ nav .nav-link{
 }
 
 .icon-wrap{
-  box-shadow: black;
+  /* box-shadow: black; */
 }
 
 .values-text-wrap{
@@ -246,8 +251,6 @@ nav .nav-link{
 }
 
 .values-text-wrap > .values-text{
-  text-align: center;
-  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .values-text-wrap .values-head{
@@ -259,6 +262,7 @@ nav .nav-link{
 .values-text-wrap .values-contents{
   font-weight: 300;
   font-size: 16px;
+  margin: 0;
 }
 
 
@@ -267,17 +271,25 @@ nav .nav-link{
 /* Profile Style */
 
 .profile-container{
-
+  margin: 80px 0px 40px 0px;
 }
 
 .profile-container > .profile-img{
+  width: 250px;
+  height: 250px;
 
+  border-radius: 20px;
+  background-position: center;
+  background-image: url("/imgs/profile-img.png");
 }
 
 .profile-text-container > .profile-header{
-  
+  margin: 15px 0px 5px 0px;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 .profile-text-container > .profile-contents{
-  
+  font-weight: 100;
+  margin: 15px 0px 5px 0px;
 }
