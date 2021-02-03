@@ -194,7 +194,7 @@ nav .nav-link{
 /* Header Style */
 
 .header-wrap{
-  margin: 100px 0px 60px 0px;
+  padding: 100px 0px 60px 0px;
 }
 
 .header{
@@ -293,4 +293,21 @@ nav .nav-link{
 .profile-text-container > .profile-contents{
   font-weight: 100;
   margin: 15px 0px 5px 0px;
+}
+
+/* Portfolio Style */
+
+.bg-color-whiteblue{
+  background-color: #EFF4FF;
+}
+
+.portfolio-container{
+  max-width: 1200px;
+}
+.portfolio-container > .portfolio-header{
+  font-size: 84px;
+  font-weight: 900;
+
+  position: relative;
+  color:#93A6C2;
 }
