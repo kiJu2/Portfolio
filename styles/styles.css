@@ -17,6 +17,16 @@ body{
 
   height:4000px;
 }
+button{
+  border: 0;
+  background-color: #fff;
+}
+hr{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  border: 1px solid rgba(0,0,0,0.1);
+}
 
 .nomargin{
   margin: 0;
@@ -75,7 +85,7 @@ body{
   box-sizing: border-box;
 }
 
-.terminal-topbar .btn{
+.terminal-topbar > .terminal-btn{
   width: 12px;
   height: 12px;
   margin: 8px 1px 0px 1px;
@@ -230,6 +240,7 @@ nav .nav-link{
 .grid-values-item{
 
 }
+
 .grid-values-item > .icon-wrap{
   align-items: center;
   display: flex;
@@ -303,11 +314,64 @@ nav .nav-link{
 
 .portfolio-container{
   max-width: 1200px;
+  /* padding: 20px 0; */
 }
 .portfolio-container > .portfolio-header{
-  font-size: 84px;
+  font-size: 102px;
   font-weight: 900;
 
   position: relative;
   color:#93A6C2;
+}
+
+.portfolio-item-container{
+  display:grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  column-gap: 10%;
+  row-gap: 80px;
+  padding: 80px 0;
+}
+
+.portfolio-img-container{
+
+}
+.portfolio-img-container > img{
+  width: 600px;
+  background-color: red;
+}
+
+.portfolio-info-container{
+  
+}
+
+.portfolio-info-container > .portfolio-title{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+
+  margin-bottom: 22px;
+}
+.portfolio-info-container > .portfolio-contents{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 100;
+}
+
+.btn{
+  /* background-color: red; */
+  /* background-color: rgb(86,72,206); */
+  padding: 8px 20px;
+  font-size: 18px;
+  /* color:white; */
+  border-radius: 25px;
+  border: 1px solid rgb(31,35,41);
+}
+
+.year-border{
+  font-size: 0.6em;
+  padding: 4px 8px;
+  background-color: #8A9BB5;
+  border-radius: 4px;
+  color: white;
+  font-weight: 700;
+  vertical-align: middle;
 }
