@@ -208,6 +208,11 @@ nav .nav-link{
   font-size: 16px;
 }
 
+nav .nav-link:hover{
+  color:rgb(155, 29, 31);
+  background-color: rgb(30,35,42);
+}
+
 /* Header Style */
 
 .header-wrap{
@@ -245,6 +250,7 @@ nav .nav-link{
 
   /* background-color: red; */
 }
+
 .grid-values-item{
 
 }
@@ -432,4 +438,21 @@ nav .nav-link{
 
 .notused{
   color: red !important;
+}
+
+@media only screen and (max-width: 800px) {
+  body > * {
+    font-size: 0.8em;
+  }
+  .grid-values-container{
+    grid-template-columns: auto auto;
+    column-gap: 100px;
+    row-gap: 20px;
+  }
+  .portfolio-item-container{
+    grid-template-columns: auto;
+  }
+  .span-border{
+    font-size:0.9em;
+  }
 }

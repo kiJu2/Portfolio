@@ -62,49 +62,55 @@ const animateTyping = (num, strings) => {
     });
   }, 0)
 }
-function ready() {
-  alert('DOM is ready');
+// function ready() {
+//   alert('DOM is ready');
 
-  // image is not yet loaded (unless it was cached), so the size is 0x0
-  alert(`Image size: ${img.offsetWidth}*${img.offsetHeight}`);
-}
+//   // image is not yet loaded (unless it was cached), so the size is 0x0
+//   alert(`Image size: ${img.offsetWidth}*${img.offsetHeight}`);
+// }
 
-document.addEventListener("DOMContentLoaded", ready);
+// document.addEventListener("DOMContentLoaded", ready);
 
-window.onload = () =>{
-
-
-
+const animTyped = () =>{
   setTimeout(() =>{
-    animateTyping('1', ['cd project/introduc', 'cd project/intro']);
-  }, 1000)
+    animateTyping('1', ['cd project/intro']);
+  }, 500)
   //타이핑 애니메이션
 
   setTimeout(() => {
     addTerminalHTML('2', terminalUser, '~/project/intro')
     // 새로운 terminal 요소 추가
-  }, 3100)
+  }, 1400)
   
   setTimeout(() => {
     animateTyping('2', ['cat intro_self.md'])
-  }, 3400)
+  }, 1700)
 
   setTimeout(() =>{
     addTerminalText(terminalIntroContent)
-  }, 4400)
+  }, 2700)
   setTimeout(() => {
     addTerminalHTML('3', terminalUser, '~/project/intro')
-  }, 4405)
+  }, 2705)
 
   setTimeout(() => {
     animateTyping('3', ['cat info.md'])
-  }, 5200)
+  }, 3500)
   
   setTimeout(() =>{
     addTerminalText(terminalInfoContent)
-  }, 5800)
+  }, 4100)
   setTimeout(() => {
     addTerminalHTML('3', terminalUser, '~/project/intro')
-  }, 5805)
+  }, 4105)
 }
 
+// slide
+
+const slideByElementId = id => {
+  alert(id);
+}
+
+window.onload = () =>{
+  animTyped();
+}
