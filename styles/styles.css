@@ -111,6 +111,9 @@ hr{
   width: 880px;
   min-width: 880px;
   height: 680px;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
   margin: 0px;
 
   background-color: rgb(30,35,42);
@@ -121,6 +124,9 @@ hr{
   border-bottom-right-radius: 15px;
 
   box-shadow: 20px 20px 40px black;
+}
+#terminal::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
 }
 
 .terminal-body{
@@ -284,12 +290,14 @@ nav .nav-link{
 /* Profile Style */
 
 .profile-container{
-  margin: 80px 0px 40px 0px;
+  margin: 160px 0px 240px 0px;
 }
 
 .profile-container > .profile-img{
   width: 250px;
   height: 250px;
+
+  /* margin-b */
 
   border-radius: 20px;
   background-position: center;
@@ -298,7 +306,7 @@ nav .nav-link{
 }
 
 .profile-text-container > .profile-header{
-  margin: 15px 0px 5px 0px;
+  margin: 25px 0px 5px 0px;
   font-size: 24px;
   font-weight: 300;
 }
@@ -361,6 +369,12 @@ nav .nav-link{
   
   color: rgba(30,35,42,0.5) !important;
 }
+.portfolio-contribution{
+  margin-bottom: 22px;
+  font-size: 0.8em;
+  
+  color: rgba(30,35,42,0.5) !important;
+}
 .portfolio-info-container > .portfolio-contents{
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 100;
@@ -408,8 +422,14 @@ nav .nav-link{
   font-weight: 700;
   vertical-align: middle;
   font-family: MesloLGS;
+
+  line-height: 28px;
 }
 
 .keywords-container{
   
+}
+
+.notused{
+  color: red !important;
 }
