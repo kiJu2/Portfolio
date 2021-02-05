@@ -15,6 +15,8 @@ a {
 body{
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
+  width: 100vw;
 }
 button{
   border: 0;
@@ -193,7 +195,7 @@ nav{
 }
 
 nav .nav-link-wrap{
-  width: 100%;
+  width: 1200px;
 }
 
 nav .nav-link{
@@ -238,17 +240,19 @@ nav .nav-link:hover{
 
 .grid-values-container{
   max-width: 1200px;
-  padding: 0px 20%;
-  display:grid;
+  padding: 0px 100px;
+  display: grid;
   grid-template-columns: auto auto auto auto;
   justify-content: center;
-  column-gap: 20%;
+  column-gap: 10%;
   row-gap: 80px;
+  /* background-color: red;
 
   /* background-color: red; */
 }
 
 .grid-values-item{
+  width: 150px;
 
 }
 
@@ -381,6 +385,7 @@ nav .nav-link:hover{
 .portfolio-info-container > .portfolio-contents{
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 100;
+  word-break: break-all;
 }
 
 .portfolio-btns-container{
@@ -436,6 +441,60 @@ nav .nav-link:hover{
 .notused{
   color: red !important;
 }
+
+/* Footer !! */
+/* Footer !! */
+/* Footer !! */
+
+
+.footer-intro{
+  width: 0;
+  height: 0;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-top: 150px solid #EFF4FF;
+  position: relative;
+  bottom: 1;
+}
+
+footer{
+  background-color: rgb(31,35,41);
+
+  /* height: 1000px; */
+  /* padding:200px 0px; */
+}
+
+.footer-container{
+  color: #EFF4FF;
+  text-align: center;
+
+  padding: 150px 40px 200px 40px;
+}
+
+.footer-container > h3{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 2.6em;
+}
+
+.footer-container > p{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 100;
+  /* font-size: 1em; */
+  /* width: 600px; */
+}
+
+.alink{
+  /* color: rgb(30,35,42); */
+  color:inherit;
+  /* font-weight: 300; */
+  /* font-family: 'Noto Sans KR', sans-serif; */
+}
+.alink:hover{
+  background-color: #fff;
+  color:rgb(155, 29, 31);
+}
+
 
 /* responsive */
 /* responsive */
@@ -511,6 +570,7 @@ nav .nav-link:hover{
   nav{
     width: 100%;
     position: fixed;
+    z-index: 99;
     top: 0;
   }
   nav .nav-link-wrap {
@@ -518,12 +578,24 @@ nav .nav-link:hover{
   }
 
   nav .nav-link {
-    /* padding: 20px 0px; */
     font-family: 'Raleway', sans-serif;
     font-weight: lighter;
+    margin:0;
     color: white;
-    margin: 0px 20px;
+    margin-left: 20px;
     line-height: 26px;
-    font-size: 1.0em;
+    font-size: 0.8em;
+  }
+
+  /* Footer */
+  .footer-container{
+    color: #EFF4FF;
+    text-align: center;
+
+    /* padding: 0px 40px; */
+  }
+
+  .footer-container > h3{
+    font-size: 6vw;
   }
 }

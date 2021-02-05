@@ -12,7 +12,7 @@ const terminalIntroContent = `
 저의 목표는 선배 개발자님들 처럼, 제가 개척한 길 또한 우리 후배 개발자들에게 도움이 되는 것입니다.<br><br>
 
 개발을 하며 탐구하고, 소통하고, 컴퓨터 공학의 이슈에 대해 살펴보는 것을 좋아합니다.<br>
-저에 대해 더욱 알고 싶으시다면 여기를 눌러주세요.
+저에 대해 더욱 알고 싶으시다면 <a class="alink" target="_blank" href="https://2kiju.tistory.com/31">여기</a>를 눌러주세요.
 `
 const terminalInfoContent = `
 # Info<br>
@@ -28,6 +28,19 @@ const terminalInfoContent = `
 ## blog<br>
 > <a target="_blank" href="https://2kiju.tistory.com/">https://2kiju.tistory.com/</a><br>
 `
+const terminalInitHtml = `
+  <span class="terminal-head-bg terminal-head">
+    <span class="terminal-head-title">2kiju@MacBook-Pro</span>
+    <span class="terminal-head-arrow"></span>
+    <span class="terminal-head-path">~/</span>
+  </span>
+  <span class="terminal-head-triangle-right"></span>
+  <span class="typed1 terminal-body"></span>
+`
+
+const setTerminalHTML = html =>{
+  document.getElementById('terminal').innerHTML = html;
+}
 
 const addTerminalHTML = (num, user, path) =>{
   const html = `<br><br>
@@ -44,6 +57,7 @@ const addTerminalHTML = (num, user, path) =>{
 
 const addTerminalText = (string) =>{
   const text = `<br><br><span class='terminal-body'>${string}</span>`;
+  // console.log(document.getElementById('terminal'))
   document.getElementById('terminal').innerHTML += text;
 }
 
@@ -62,19 +76,12 @@ const animateTyping = (num, strings) => {
     });
   }, 0)
 }
-// function ready() {
-//   alert('DOM is ready');
 
-//   // image is not yet loaded (unless it was cached), so the size is 0x0
-//   alert(`Image size: ${img.offsetWidth}*${img.offsetHeight}`);
-// }
-
-// document.addEventListener("DOMContentLoaded", ready);
 
 const animTyped = () =>{
   setTimeout(() =>{
     animateTyping('1', ['cd project/intro']);
-  }, 500)
+  }, 300)
   //타이핑 애니메이션
 
   setTimeout(() => {
@@ -105,12 +112,13 @@ const animTyped = () =>{
   }, 4105)
 }
 
-// slide
-
-const slideByElementId = id => {
-  alert(id);
-}
-
 window.onload = () =>{
-  animTyped();
+  addTerminalText("Loaded.");
+  setTimeout(
+  () =>{
+    addTerminalHTML("1",terminalUser, '~');
+    animTyped();
+    console.log("loaded");
+    },
+  300)
 }
