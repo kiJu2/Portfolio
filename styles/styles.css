@@ -15,8 +15,6 @@ a {
 body{
   padding: 0;
   margin: 0;
-
-  height:4000px;
 }
 button{
   border: 0;
@@ -67,7 +65,8 @@ hr{
 }
 
 .mac-window{
-  /* width:880px; */
+  width: 95%;
+  max-width: 880px;
   /* min-width: 880px; */
   text-align: left;
   display: inline-block;
@@ -108,8 +107,8 @@ hr{
 }
 
 #terminal{
-  width: 880px;
-  min-width: 880px;
+  width: 100%;
+  /* min-width: 880px; */
   height: 680px;
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
@@ -191,12 +190,10 @@ nav{
   justify-content: center;
   height: 58px;
   background-color: rgb(31,35,41);
-
-  /* position: absolute; */
 }
 
 nav .nav-link-wrap{
-  width: 1200px;
+  width: 100%;
 }
 
 nav .nav-link{
@@ -440,13 +437,16 @@ nav .nav-link:hover{
   color: red !important;
 }
 
+/* responsive */
+/* responsive */
+/* responsive */
 @media only screen and (max-width: 800px) {
   body > * {
     font-size: 0.8em;
   }
   .grid-values-container{
     grid-template-columns: auto auto;
-    column-gap: 100px;
+    column-gap: 30%;
     row-gap: 20px;
   }
   .portfolio-item-container{
@@ -454,5 +454,76 @@ nav .nav-link:hover{
   }
   .span-border{
     font-size:0.9em;
+  }
+
+  /* main section */
+  /* main section */
+  /* main section */
+
+  .mac-window{
+    /* scale: 0.5; */
+    width: 100%;
+  }
+  #terminal{
+    /* scale: 0.5; */
+    width: 100%;
+  }
+  .mac-window > *{
+    font-size: 0.6em;
+  }
+  .terminal-head{
+    font-size: 0.6em;
+  }
+  .terminal-head-arrow{
+  width: 12px;
+  height: 12px;
+  /* border-top: rgb(130,130,130) solid 1px; */
+  /* border-right: rgb(130,130,130) solid 1px; */
+
+  top: 3px;
+  right: 4px;
+
+  transform: rotate(45deg);
+  position: relative;
+  display: inline-block;
+  }
+  .terminal-head-triangle-right{
+    width: 12px;
+    height: 12px;
+    top: 3px;
+    right: 6px;
+  }
+
+  /* Portfolio section */
+  /* Portfolio section */
+  /* Portfolio section */
+
+  .portfolio-container > .portfolio-header{
+    font-size:15vw;
+  }
+
+  .span-border{
+    font-size: 0.8em;
+  }
+/* Nav */
+/* Nav */
+/* Nav */
+  nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  nav .nav-link-wrap {
+    width: 100%;
+  }
+
+  nav .nav-link {
+    /* padding: 20px 0px; */
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    color: white;
+    margin: 0px 20px;
+    line-height: 26px;
+    font-size: 1.0em;
   }
 }
