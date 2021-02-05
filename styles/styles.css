@@ -321,6 +321,7 @@ nav .nav-link:hover{
 .profile-text-container > .profile-contents{
   font-weight: 100;
   margin: 15px 0px 5px 0px;
+  padding: 0px 20px;
 }
 
 /* Portfolio Style */
@@ -528,16 +529,14 @@ footer{
     width: 100%;
   }
   .mac-window > *{
-    font-size: 0.6em;
+    font-size: 1.2em;
   }
   .terminal-head{
-    font-size: 0.6em;
+    font-size: 0.8em;
   }
   .terminal-head-arrow{
   width: 12px;
   height: 12px;
-  /* border-top: rgb(130,130,130) solid 1px; */
-  /* border-right: rgb(130,130,130) solid 1px; */
 
   top: 3px;
   right: 4px;
@@ -547,8 +546,8 @@ footer{
   display: inline-block;
   }
   .terminal-head-triangle-right{
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     top: 3px;
     right: 6px;
   }
