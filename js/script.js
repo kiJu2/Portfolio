@@ -133,7 +133,7 @@ const main = () =>{
 const homeBGIMG = document.getElementById('home')
 var bgIMG = new Image();
 
-bgIMG.src = "../imgs/mac-wallpaper.jpg";
+bgIMG.src = "imgs/mac-wallpaper.jpg";
 bgIMG.onload = () =>{
   homeBGIMG.style.backgroundImage = `url("${bgIMG.src}")`
   main();

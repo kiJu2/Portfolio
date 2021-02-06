@@ -123,6 +123,7 @@ hr{
   padding: 100px 5vw 0px 5vw;
   height:100vh;
   max-height: 1200px;
+  min-height: 900px;
   background-color: #536175;
   text-align: center;
 
