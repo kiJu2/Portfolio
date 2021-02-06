@@ -9,7 +9,7 @@ const terminalIntroContent = `
 
 > 새로운 기술을 배우는 것에 큰 흥미를 가지고 있습니다. 새로운 기술과 디자인은 선배 개발자님들의 노고가 담겨있다고 생각합니다. 그 길을 따라 걷고, 기술의 깊은 뜻을 이해하고, 깨닳음을 얻는 것이 저의 행복입니다.<br><br>
 
-> 저의 목표는 선배 개발자님들 처럼, 제가 개척한 길 또한 우리 후배 개발자들에게 도움이 되는 것입니다.<br><br>
+> 저의 목표는 선배 개발자님들처럼, 제가 개척한 길 또한 우리 후배 개발자들에게 도움이 되는 것입니다.<br><br>
 
 > 개발을 하며 탐구하고, 소통하고, 컴퓨터 공학의 이슈에 대해 살펴보는 것을 좋아합니다.<br>
 저에 대해 더욱 알고 싶으시다면 <a class="alink" target="_blank" href="https://2kiju.tistory.com/31">여기</a>를 눌러주세요.
@@ -78,6 +78,7 @@ const animateTyping = (num, strings) => {
 }
 
 
+const arrow = document.getElementById("arrow-in");
 const animTyped = () =>{
   setTimeout(() =>{
     animateTyping('1', ['cd project/intro']);
@@ -87,6 +88,7 @@ const animTyped = () =>{
   setTimeout(() => {
     addTerminalHTML('2', terminalUser, '~/project/intro')
     // 새로운 terminal 요소 추가
+  document.getElementById('terminal').scrollTo(0, 1000);
   }, 1400)
   
   setTimeout(() => {
@@ -98,6 +100,7 @@ const animTyped = () =>{
   }, 2700)
   setTimeout(() => {
     addTerminalHTML('3', terminalUser, '~/project/intro')
+    document.getElementById('terminal').scrollTo(0, 1000);
   }, 2705)
 
   setTimeout(() => {
@@ -109,11 +112,14 @@ const animTyped = () =>{
   }, 4100)
   setTimeout(() => {
     addTerminalHTML('3', terminalUser, '~/project/intro')
-  document.getElementById('terminal').scrollTo(0, 1000);
+    document.getElementById('terminal').scrollTo(0, 1000);
+    arrow.classList.add("fadeio");
   }, 4105)
+
+
 }
 
-window.onload = () =>{
+const main = () =>{
   addTerminalText("Loaded.");
   setTimeout(
   () =>{
@@ -122,4 +128,13 @@ window.onload = () =>{
     console.log("loaded");
     },
   300)
+}
+
+const homeBGIMG = document.getElementById('home')
+var bgIMG = new Image();
+
+bgIMG.src = "../imgs/mac-wallpaper.jpg";
+bgIMG.onload = () =>{
+  homeBGIMG.style.backgroundImage = `url("${bgIMG.src}")`
+  main();
 }
