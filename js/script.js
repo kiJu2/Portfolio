@@ -120,7 +120,11 @@ const animTyped = () =>{
 }
 
 const main = () =>{
-  addTerminalText("Loaded.");
+  // addTerminalText("Loaded.");
+  const loadingElement = document.querySelector('.loading');
+  loadingElement.classList.remove('loading')
+
+
   setTimeout(
   () =>{
     addTerminalHTML("1",terminalUser, '~');
@@ -130,11 +134,42 @@ const main = () =>{
   300)
 }
 
+var isRunningMain = false;
+var timeCountS = 0;
+
+//js bg load
+//js bg load
+
 const homeBGIMG = document.getElementById('home')
 var bgIMG = new Image();
 
 bgIMG.src = "imgs/mac-wallpaper.jpg";
 bgIMG.onload = () =>{
+  addTerminalText("Loaded.");
   homeBGIMG.style.backgroundImage = `url("${bgIMG.src}")`
-  main();
+  !isRunningMain && main();
+  isRunningMain = true;
 }
+
+// Force set terminal.
+// Force set terminal.
+
+setTimeout(()=>{
+  // addTerminalText("")
+  !isRunningMain && function(){
+    addTerminalText("Timeout load resource. Force terminal execution.")
+    main()
+  };
+  isRunningMain = true;
+}, 2500)
+
+// setInterval(()=>
+//   timeCountS += 1,
+//   1000);
+
+// while(true){
+  
+//   if(isRunningMain && timeCount > 3){
+//     console.log("time is " + toString(timecount));
+//   }
+// }
