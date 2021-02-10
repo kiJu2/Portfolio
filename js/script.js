@@ -12,7 +12,7 @@ const terminalIntroContent = `
 > 저의 목표는 선배 개발자님들처럼, 제가 개척한 길 또한 우리 후배 개발자들에게 도움이 되는 것입니다.<br><br>
 
 > 개발을 하며 탐구하고, 소통하고, 컴퓨터 공학의 이슈에 대해 살펴보는 것을 좋아합니다.<br>
-저에 대해 더욱 알고 싶으시다면 <a class="alink" target="_blank" href="https://2kiju.tistory.com/31">여기</a>를 눌러주세요.
+저에 대해 더욱 알고 싶으시다면 하단으로 스크롤하여, 저의 이야기를 들어주세요.
 `
 const terminalInfoContent = `
 # Info<br>
@@ -173,3 +173,6 @@ setTimeout(()=>{
 //     console.log("time is " + toString(timecount));
 //   }
 // }
+
+// 추 후, 내가 써내려간 스킬 키워드를 가지고 그래프 만들어도 재밌겠다.
+// 그리고 유지보수를 위하여 html에 다 써내리지 말고 객체화 시키면 훨신 편할거야.
