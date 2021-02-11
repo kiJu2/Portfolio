@@ -385,6 +385,11 @@ nav .nav-link:hover{
 /* Profile Style */
 /* Profile Style */
 
+.box-style-wb{
+  border: 2px solid #8A9BB5;
+  box-shadow: 8px 8px 25px #93a6c2;
+}
+
 .profile-container{
   margin: 160px 0px 240px 0px;
 }
@@ -399,9 +404,6 @@ nav .nav-link:hover{
   background-position: center;
   background-image: url("../imgs/profile-img.png");
   background-color: #8A9BB5;
-
-  border: 2px solid #8A9BB5;
-  box-shadow: 8px 8px 25px #93a6c2;
 }
 
 .profile-text-container > .profile-header{
@@ -695,5 +697,50 @@ footer{
 
   .footer-container > h3{
     font-size: 6vw;
+  }
+}
+
+@page{  
+  size: A4;
+  margin : 0mm;
+  padding: 0mm;
+  border : 0mm;
+  /* height: 400mm; */
+  /* 210 * 297 */
+}
+@media print { 
+	body, html {
+     border:0; margin:0; padding:0;
+     width: 100%;
+     height: 100%;
+  }
+
+  body {
+    /* visibility: */
+  }
+
+  .print-no-break{
+    break-inside: avoid;
+  }
+  .print-height-100{
+    height:100% !important;
+    max-height: none;
+  }
+
+  .print-invisible{
+    display: none;
+  }
+
+  .print-pagebreak{
+    page-break-before: always;
+  }
+  .portfolio-container{
+    min-height: 100%;
+  }
+
+  .footer-intro{
+    border-left: 125mm solid transparent !important;
+    border-right: 125mm solid transparent !important;
+    bottom: 1;
   }
 }
