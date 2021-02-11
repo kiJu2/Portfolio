@@ -738,9 +738,28 @@ footer{
     min-height: 100%;
   }
 
+  /* main section */
+  /* main section */
+  /* main section */
+
+  #terminal{
+    height: 800px;
+  }
+  .section-main{
+    padding-top:50mm;
+  }
+
+
+  /* footer section */
+  /* footer section */
+  /* footer section */
+
   .footer-intro{
     border-left: 125mm solid transparent !important;
     border-right: 125mm solid transparent !important;
     bottom: 1;
+  }
+  .footer-container{
+    padding: 100mm 40mm 100mm 40mm;
   }
 }
