@@ -162,7 +162,7 @@ setTimeout(()=>{
   // addTerminalText("")
   // console.log("Timeout load. !isRunningMain is " + !isRunningMain)
   !isRunningMain && function(){
-    addTerminalText("Timeout load resource. Force terminal execution.")
+    addTerminalText("Resource load timeout.")
     main()
     isRunningMain = true;
   }();
