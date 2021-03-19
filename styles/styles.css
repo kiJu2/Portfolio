@@ -519,8 +519,8 @@ nav .nav-link:hover{
 .span-border{
   font-size: 0.7em;
   padding: 5px 8px;
-  background-color: #8A9BB5;
   border-radius: 4px;
+  background-color: #8A9BB5;
   color: white;
   font-weight: 700;
   vertical-align: middle;
@@ -529,8 +529,8 @@ nav .nav-link:hover{
   line-height: 28px;
 }
 
-.keywords-container{
-  
+.span-bg-violet{
+  background-color: #918AC2 !important;
 }
 
 .notused{
