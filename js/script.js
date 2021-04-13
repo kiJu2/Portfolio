@@ -3,7 +3,7 @@
 {/* <a href="https://kiju2.github.io/Portfolio/" target="_blank"> 해당 화면은 pdf입니다. 브라우저를 통하여 보시면 더욱 편하게 보실 수 있습니다. 이 문구를 클릭해주세요.</a><br></br> */}
 const terminalUser = "2kiju@MacBook-Pro"
 const terminalIntroContent = `
-# 안녕하세요. 생각하는 것을 만들어내는 웹 개발자 이기주입니다.<br><br>
+# 안녕하세요. 상상을 그리는 개발자 이기주입니다.<br><br>
 
 > 컴퓨터 학문에 많은 관심을 가지고 있어, 대학교 때 저의 진로를 바꾸어 컴퓨터공학부로 전과하였습니다.
 저의 상상을 컴퓨터 속에 담아내는 것이 저의 취미이자 꿈이며, 컴퓨터 공학의 무한한 가능성에 있어서 의심치 않습니다.<br><br>
