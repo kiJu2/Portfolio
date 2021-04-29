@@ -2,6 +2,7 @@
 
 {/* <a href="https://kiju2.github.io/Portfolio/" target="_blank"> 해당 화면은 pdf입니다. 브라우저를 통하여 보시면 더욱 편하게 보실 수 있습니다. 이 문구를 클릭해주세요.</a><br></br> */}
 const terminalUser = "2kiju@MacBook-Pro"
+
 const terminalIntroContent = `
 # 안녕하세요. 상상을 그리는 개발자 이기주입니다.<br><br>
 
@@ -78,7 +79,6 @@ const animateTyping = (num, strings) => {
   }, 0)
 }
 
-
 const arrow = document.getElementById("arrow-in");
 const animTyped = () =>{
   setTimeout(() =>{
@@ -114,12 +114,9 @@ const animTyped = () =>{
     document.getElementById('terminal').scrollTo(0, 1000);
     arrow.classList.add("fadeio");
   }, 4105)
-
-
 }
 
 const main = () =>{
-  // addTerminalText("Loaded.");
   const loadingElement = document.querySelector('.loading');
   loadingElement.classList.remove('loading')
 
