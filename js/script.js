@@ -64,7 +64,7 @@ const addTerminalText = (string) =>{
 
 const animateTyping = (num, strings) => {
   setTimeout(() =>{
-    var typed = new Typed('.typed'+num, {
+    new Typed('.typed'+num, {
       // strings: ['cd prolect', 'cd project/intro'],
       strings: strings,
       typeSpeed: 30,
@@ -84,12 +84,10 @@ const animTyped = () =>{
   setTimeout(() =>{
     animateTyping('1', ['cd project/intro']);
   }, 300)
-  //타이핑 애니메이션
 
   setTimeout(() => {
-    addTerminalHTML('2', terminalUser, '~/project/intro')
-    // 새로운 terminal 요소 추가
-  document.getElementById('terminal').scrollTo(0, 1000);
+    addTerminalHTML('2', terminalUser, '~/project/intro');
+    document.getElementById('terminal').scrollTo(0, 1000);
   }, 1400)
   
   setTimeout(() => {
@@ -138,46 +136,30 @@ var isRunningMain = false;
 var timeCountS = 0;
 
 //js bg load
-//js bg load
 
-const homeBGIMG = document.getElementById('home')
-var bgIMG = new Image();
+const homeBackgroundImageElement = document.getElementById('home')
+const backgroundImage = new Image();
 
-bgIMG.src = "imgs/mac-wallpaper.jpg";
-bgIMG.onload = () =>{
-  // console.log("onloaded. !isRunningMain is " + !isRunningMain)
-  homeBGIMG.style.backgroundImage = `url("${bgIMG.src}")`
+backgroundImage.src = "imgs/mac-wallpaper.jpg";
+backgroundImage.onload = () =>{
+  homeBackgroundImageElement.style.backgroundImage = `url("${backgroundImage.src}")`
   !isRunningMain && function(){
+    console.log("Loaded background image")
     addTerminalText("Loaded.");
-    console.log("bgIMG onload.")
     !isRunningMain && main();
     isRunningMain = true;
   }();
 }
 
 // Force set terminal.
-// Force set terminal.
 
 setTimeout(()=>{
-  // addTerminalText("")
-  // console.log("Timeout load. !isRunningMain is " + !isRunningMain)
   !isRunningMain && function(){
     addTerminalText("Resource load timeout.")
     main()
     isRunningMain = true;
   }();
 }, 2500)
-
-// setInterval(()=>
-//   timeCountS += 1,
-//   1000);
-
-// while(true){
-  
-//   if(isRunningMain && timeCount > 3){
-//     console.log("time is " + toString(timecount));
-//   }
-// }
 
 // 추 후, 내가 써내려간 스킬 키워드를 가지고 그래프 만들어도 재밌겠다.
 // 그리고 유지보수를 위하여 html에 다 써내리지 말고 객체화 시키면 훨신 편할거야.
